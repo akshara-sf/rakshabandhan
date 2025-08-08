@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffe6f0, #ffeaf7, #fff5fa);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.container {
+  padding: 40px;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #d6336c;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+.rakhi-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.thread {
+  width: 120px;
+  height: 6px;
+  background: repeating-linear-gradient(45deg, #ff5e78, #ff5e78 10px, #ffc2d1 10px, #ffc2d1 20px);
+  border-radius: 10px;
+}
+
+.rakhi-center {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  transform-origin: center;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  transition: opacity 1s ease-in-out;
+}
+
+.circle1 {
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, #ffd6dc, #ff85a2);
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 15px #ff85a2;
+  z-index: 1;
+}
+
+.circle2 {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, #ff5e78, #d6336c);
+  top: 20px;
+  left: 20px;
+  box-shadow: 0 0 10px #ff5e78;
+  z-index: 2;
+}
+
+.circle3 {
+  width: 30px;
+  height: 30px;
+  background: gold;
+  top: 45px;
+  left: 45px;
+  z-index: 3;
+  box-shadow: 0 0 20px gold;
+}
+
+.shine {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border: 2px dashed #ffcad4;
+  border-radius: 50%;
+  top: -10px;
+  left: -10px;
+  animation: rotateShine 5s linear infinite;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+@keyframes rotateShine {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #6a1b4d;
+}
+
+.cat-meme {
+  margin-top: 30px;
+  color: #ff5e78;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hidden-cat {
+  display: none;
+  margin-top: 20px;
+}
+
+#catPopup img {
+  max-width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+#catPopup p {
+  font-style: italic;
+  margin-top: 10px;
+  color: #6a1b4d;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
